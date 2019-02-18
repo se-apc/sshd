@@ -556,7 +556,7 @@ defmodule Sshd do
 
   def start_exec(cmd, user, peer, %{exec: {module, func, args}}) do
     spawn(fn ->
-      apply(module, func, [user, peer | args])
+      apply(module, func, [cmd, user, peer | args])
     end)
   end
 
