@@ -22,8 +22,8 @@ defmodule Sshd.Default do
   @doc """
   Return the dynamic port for the given args
   """
-  def get_port(:"network.ssh_port") do
-    2022
+  def get_port() do
+    22
   end
 
   @doc """
@@ -49,10 +49,5 @@ defmodule Sshd.Default do
     true
   end
 
-  @doc """
-  Passphrase to use when decoding the servers private key
-  """
-  def key_passphrase(_args) do
-    "weak_password"
-  end
+
 end

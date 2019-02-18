@@ -1,6 +1,10 @@
 # Sshd
 
-**TODO: Add description**
+Sshd is a thin wrapper around the Erlang `:ssh` module.  It allows the endpoints to be configured via `config/config.exs` and managed at runtime.
+
+## Example
+
+See the `example` project for examples of the different hooks available
 
 ## Installation
 
